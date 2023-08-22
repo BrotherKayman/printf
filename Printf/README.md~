@@ -1,0 +1,2 @@
+These are the two versions of my printf function. 
+Still on it, the function only outputs char c and *s successfully
