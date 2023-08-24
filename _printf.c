@@ -13,12 +13,14 @@ int _printf(const char *format, ...)
 	int flags, width, precision, size, buff_ind = 0;
 	va_list list;
 	char buffer[BUFF_SIZE];
-
+	
+	/*c and *s specifiers */
+	char c, *s;
 	if (format == NULL)
 		return (-1);
 
 	va_start(list, format);
-
+	/*the write function to print char & string */
 	for (i = 0; format && format[i] != '\0'; i++)
 	{
 		if (format[i] != '%')
