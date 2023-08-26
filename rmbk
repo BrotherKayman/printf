@@ -1,0 +1,3 @@
+#!/bin/bash
+rm *'backup.c' *~
+echo "All unnecessary files removed successfully!!"
